@@ -435,20 +435,6 @@ client.on('message', message => {
 
 
 
-client.on('ready' , () => {
-  var time = 7200000;
-  setInterval(function() {
-      client.destroy();
-      client.login('NDQwMjc1MzQ4MDgxNDc1NTg0.Djjv8A.6BwWBduCFuN3jXa-oMl5Qd0AnvA')
-    }, time);
-  })
-
-
-
-
-
-
-
 
 
 
