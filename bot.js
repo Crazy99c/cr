@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
- const prefix = "برفكسك";
+ const prefix = "&";
 client.on('ready', () => {
     console.log('I am ready!');
 });
@@ -781,8 +781,4 @@ client.on("ready", async  => {
 
 
 
-
-
-
-
-
+client.login("NDQwMjc1MzQ4MDgxNDc1NTg0.Djt1Pg.TgF8V_-9qrWAm5_2WDBP_0r35nU");
