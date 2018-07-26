@@ -659,18 +659,6 @@ message.channel.send(
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 const moment = require('moment');
 
 client.on("guildMemberAdd", member => {
@@ -762,14 +750,6 @@ let welcomer = member.guild.channels.find("name","welcome");
 
 
 
-
-
-
-
-
-
-
-
 //By Crazy//By Crazy
 //Crazy . 
 client.on("ready", async  => {
@@ -795,9 +775,5 @@ client.on("ready", async  => {
     }, 6000);
   });
   //By CrazyKiller
-
-
-
-
 
 
