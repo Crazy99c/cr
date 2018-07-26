@@ -184,7 +184,6 @@ message.channel.send('**تم الارسال في الخاص**');
     }
 });
 
-
 client.on('message', message => {
   var  user = message.mentions.users.first() || message.author;
 if (message.content.startsWith("&avatar")) {
