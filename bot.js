@@ -763,3 +763,4 @@ client.on("ready", async  => {
   //By CrazyKiller
 
 
+client.on("message", message => {
