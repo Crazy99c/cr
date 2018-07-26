@@ -801,19 +801,3 @@ client.on("ready", async  => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      client.login("NDQwMjc1MzQ4MDgxNDc1NTg0.DjufwQ.jOB1-eFffEyUhOWjcxqUttmaOY4");
