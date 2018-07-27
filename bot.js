@@ -895,6 +895,29 @@ if (message.content.startsWith(prefix + "بوت")) {
 
 
 
+client.on("ready", async  => {
+  setInterval(function(){
+  client.channels.find('id', '472026085517950987').setName("W");
+  client.channels.find('id', '472026085517950987').setName("We");
+  client.channels.find('id', '472026085517950987').setName("Wel");
+  client.channels.find('id', '472026085517950987').setName("Welc");
+  client.channels.find('id', '472026085517950987').setName("Welco");
+  client.channels.find('id', '472026085517950987').setName("Welcom");
+  client.channels.find('id', '472026085517950987').setName("Welcome");
+  client.channels.find('id', '472026085517950987').setName("Welcome T");
+  client.channels.find('id', '472026085517950987').setName("Welcome To");
+  client.channels.find('id', '472026085517950987').setName("Welcome To S");
+  client.channels.find('id', '472026085517950987').setName("Welcome To Su");
+  client.channels.find('id', '472026085517950987').setName("Welcome To Sul");
+  client.channels.find('id', '472026085517950987').setName("Welcome To Sult");
+  client.channels.find('id', '472026085517950987').setName("Welcome To Sulta");
+  client.channels.find('id', '472026085517950987').setName("Welcome To Sultan");
+  client.channels.find('id', '472026085517950987').setName("Welcome To SultanJ");
+  client.channels.find('id', '472026085517950987').setName("Welcome To SultanJO");
+  client.channels.find('id', '472026085517950987').setName("Welcome To SultanJOR");
+    }, 6000);
+  });
+
 
 
 
