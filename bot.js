@@ -356,7 +356,7 @@ client.on('guildMemberAdd', member => {
     .setColor('GREEN')
     .setFooter('ZelixMC Bot', 'https://cdn.discordapp.com/icons/390551815072251904/418fa2788d8115808951c9881ba8f190.jpg')
 
-var channel =member.guild.channels.find('name', '👋welcome')
+var channel =member.guild.channels.find('name', 'welcome')
 if (!channel) return;
 channel.send({embed : embed});
 });
@@ -914,6 +914,48 @@ client.on("ready", async  => {
   client.channels.find('id', '472026085517950987').setName("Welcome To SultanJOR");
     }, 6000);
   });
+
+
+
+
+
+let rebel;
+client.on("ready", async  => {
+    let guild = client.guilds.get("355053412506664960");
+  let users = guild.members.map(member => member.user.id);
+  let i;
+  rebel=0;
+for (i=0 ; i < users.length ; i++) {
+ let   check = guild.members.get(users[i]);
+if(!check.voiceChannelID){
+        continue;
+}else{
+  rebel++;
+}
+}
+guild.channels.find('id', '472749918772133900').setName("المتصلين الان : "+rebel+"");
+  client.setInterval(() =>{
+    let d = Date.now()
+  }, 5000);
+});
+client.on('voiceStateUpdate', (oldMember, newMember) => {
+    let guild = client.guilds.get("355053412506664960");
+let newUserChannel = newMember.voiceChannel
+let oldUserChannel = oldMember.voiceChannel
+ if(oldUserChannel === undefined && newUserChannel !== undefined) {
+   rebel++;
+guild.channels.find('id', '472749918772133900').setName(" المتصلين الان : "+rebel+"");
+} else if(newUserChannel === undefined){
+  rebel--;
+guild.channels.find('id', '472749918772133900').setName(" المتصلين الان : "+rebel+"");
+}
+});
+client.on('message', Codes => {
+  
+  if(Codes.content === "-صوت") {
+      Codes.channel.send(" المتصلين الان : "+rebel+"");
+}
+});
 
 
 
