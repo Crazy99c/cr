@@ -445,7 +445,7 @@ client.on('message', message => {
             if (message.content.startsWith("قوانين")) {
      let embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)
-.addField('     **اولا** ' ,' *يرجى احترام جميع الاعضاء وعدم السب** ')
+.addField('     **اولا** ' ,' **يرجى احترام جميع الاعضاء وعدم السب** ')
 .addField('     **ثانيا** ' ,' **يرجى عدم التحدث عن السياسة والطائفية ** ')
 .addField('     **ثالثا** ' ,' **يرجى عدم تكرار الكلام** ')
 .addField('    **رابعا**' ,' **ممنوع الاعلانات** ')
@@ -560,7 +560,7 @@ client.on('message', message => {
             if (message.content.startsWith("-قوانين")) {
      let embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)
-.addField('     **اولا** ' ,' *يرجى احترام جميع الاعضاء وعدم السب** ')
+.addField('     **اولا** ' ,' **يرجى احترام جميع الاعضاء وعدم السب** ')
 .addField('     **ثانيا** ' ,' **يرجى عدم التحدث عن السياسة والطائفية ** ')
 .addField('     **ثالثا** ' ,' **يرجى عدم تكرار الكلام** ')
 .addField('    **رابعا**' ,' **ممنوع الاعلانات** ')
@@ -778,14 +778,6 @@ client.on("message", function(message) {
 
 
 
-client.on('message', message => {
-    var args = message.content.split(/[ ]+/)
-    if(message.content.includes('https://')){
-      if(!message.member.hasPermission('ADMINISTRATOR'))
-        message.delete()
-    return message.reply(`** يمنع نشر الروابط بهذا السيرفر  :angry: ! **`)
-    }
-});
 
 
 
