@@ -857,8 +857,6 @@ client.on("message", function(message) {
     "f u",
     "يلعن ابوك",
     "يلعن امك"
-    "قحبه",
-    "خنيث"
   ];
 
   if(bannedwords.some(word => message.content.includes(word))) {
